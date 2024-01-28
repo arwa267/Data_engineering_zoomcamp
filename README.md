@@ -15,7 +15,6 @@ The data used in this homework is the green taxi dataset for the month of Septem
 
 
 
-
 ## Question One: 
 
 After installing docker, and to get more information about running an image, run the following command
@@ -86,18 +85,17 @@ http://localhost:8080/
  - Question 5: Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000? Answer: "Brooklyn" "Manhattan" "Queens"
  - Question 6: For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip? Answer is : JFK Airport
 
+
  
+## Question 7
+Using visual studio codespace, Terraform is downloaded and after doing the necessary changes for both `main.tf` and `variables.tf`.
+The following command is ran:
+```terraform
+  terraform apply
+```
+The following output shows which indicated that a bucket and a big query are created in Google Cloud Platform.
 
-
-
-
-
-
-
-
-
-
-
+![Screenshot 2024-01-28 210407](https://github.com/arwa267/Data_engineering_zoomcamp/assets/77813858/b1f1f6c6-9f22-4ce7-a3c7-036d731081a7)
 
 
 
