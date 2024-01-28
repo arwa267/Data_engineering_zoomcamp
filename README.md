@@ -39,11 +39,16 @@ If you want to automatically remove the container upon exiting, use the followin
 ```bash
   docker run  -it --entrypoint=bash python:3.9 
 ```
-if you haven't ran this command before then it will take sometime to download this image. For knowing the version of the wheel package in this version, then run the following command:
+if you haven't ran this command before then it will take sometime to download this image.  To know all the installed packages in this image, type the following:
 
 ```bash
-  wheel --version
+  pip list
 ```
+The output will be the following:
+
+![Screenshot 2024-01-28 184055](https://github.com/arwa267/Data_engineering_zoomcamp/assets/77813858/bd255979-0c06-4c42-912e-58b1eb08d259)
+
+
 
 ## Questions Three, Four, Five, and Six:
 Initially, we have to create a postgress database and add the dataset of the green taxi into this database. Also, we will use pgadmin to interact with this postgress database using SQL queries.
@@ -76,8 +81,29 @@ http://localhost:8080/
 
  Click on add a new server, and add the credentials of the postgres database that was created earlier in the connection tab. Now we can write an sql query to interact with the database. The queries used to answer the coming four questions are present in `Queries_Green_Taxi.sql` 
 
- - Question 3: How many taxi trips were totally made on September18th 2019? The Answer is : **15612** 
- - Question 4: Which was the pick up day with the largest trip distance? The Answer is:** 2019-09-26**
- - Question 5: Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000? Answer: ** "Brooklyn" "Manhattan" "Queens"**
- - Question 6: For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip? Answer is : **JFK Airport**
+ - Question 3: How many taxi trips were totally made on September18th 2019? The Answer is :15612
+ - Question 4: Which was the pick up day with the largest trip distance? The Answer is: 2019-09-26
+ - Question 5: Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000? Answer: "Brooklyn" "Manhattan" "Queens"
+ - Question 6: For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip? Answer is : JFK Airport
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
