@@ -45,7 +45,7 @@ if you haven't ran this command before then it will take sometime to download th
   wheel --version
 ```
 
-## Question Three:
+## Questions Three, Four, Five, and Six:
 Initially, we have to create a postgress database and add the dataset of the green taxi into this database. Also, we will use pgadmin to interact with this postgress database using SQL queries.
 
 The command used to run a postgress database:
@@ -62,3 +62,22 @@ docker run -it -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" -e PGADMIN_DEFAULT_PAS
  ```
 After running both instances, the data from the two datasets mentioned are uploaded to the postgres database. This is done in the jupyeter notebook `Connecting with Postgres.ipynb` where 
 `Sqlalchemy` package is used to connect with Postgres.
+
+
+Now to open a `Pgadmin`, open the browser through the following link:
+
+```bash
+http://localhost:8080/
+ ```
+
+ The following page will open where you have to insert the email and password that were specified when running the pgadmin image.
+
+ ![Screenshot 2024-01-28 160403](https://github.com/arwa267/Data_engineering_zoomcamp/assets/77813858/5b7a14a6-aa8c-4513-8c25-a91c73474627)
+
+ Click on add a new server, and add the credentials of the postgres database that was created earlier in the connection tab. Now we can write an sql query to interact with the database. The queries used to answer the coming four questions are present in `Queries_Green_Taxi.sql` 
+
+ - Question 3: How many taxi trips were totally made on September18th 2019? The Answer is : **15612** 
+ - Question 4: Which was the pick up day with the largest trip distance? The Answer is:** 2019-09-26**
+ - Question 5: Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000? Answer: ** "Brooklyn" "Manhattan" "Queens"**
+ - Question 6: For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip? Answer is : **JFK Airport**
+
