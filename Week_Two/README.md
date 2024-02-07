@@ -40,6 +40,19 @@ The numbers of rows left along with the unique values of the passenger present i
 ## Loading the Data
 After the above transformations, the data is loaded  into both Postgres and Google Cloud Storage. Make sure to insert the credentials of the Postgres and the service key into `io_config.yaml`.
 
-The scripts for loading the data into partitions based on the 'lpep_pickup_date' is in `partition_gree_taxi.py`. The data will be divided into 96 partitions !!
+- **Loading the Data to Google Cloud Storage**:
+
+    The script for dividing the data into partitions based on the 'lpep_pickup_date' and then loading it into a bucket in the Google Cloud storage is in `partition_gree_taxi.py`. The data will be divided into 96 partitions !!
+
+ - **Loading the Data into Postgress**
+
+    `Postgress_Transform.py`loads the data into a Postgres database with the credentials specifed in the `io_config.yaml` file.
+ 
+
+
+
+
+
+
 
 
