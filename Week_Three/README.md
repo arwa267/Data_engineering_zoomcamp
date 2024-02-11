@@ -51,8 +51,9 @@ When going to the Storage info of this table, all relevant information will appe
 - **For getting  the numeber of records with  fare amount equal to zero**
 
   ```SQL
-  select  COUNT(DISTINCT(PULocationID))
-  from taxiridesny.external_green_tripdata_non_part
+select  COUNT(*)
+from taxiridesny.external_green_tripdata_non_part t
+where t.fare_amount=0;
   ```
 
 
