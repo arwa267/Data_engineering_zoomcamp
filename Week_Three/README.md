@@ -51,10 +51,10 @@ When going to the Storage info of this table, all relevant information will appe
 - **For getting  the numeber of records with  fare amount equal to zero**
 
   ```SQL
-  select  COUNT(*)
-from taxiridesny.external_green_tripdata_non_part t
-where t.fare_amount=0
-  ```
+ select  COUNT(*)
+from taxiridesny.external_green_tripdata_non_part 
+where fare_amount=0
+```
 
 
 ## Better Ways for an Effective Data Retrieval in BigQuery
