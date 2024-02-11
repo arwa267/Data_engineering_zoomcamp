@@ -50,11 +50,11 @@ When going to the Storage info of this table, all relevant information will appe
 
 - **For getting  the numeber of records with  fare amount equal to zero**
 
-  ```SQL
- select  COUNT(*)
-from taxiridesny.external_green_tripdata_non_part 
-where fare_amount=0
-```
+ ```SQL
+select  COUNT(*)
+from taxiridesny.external_green_tripdata_non_part t
+where t.fare_amount=0;
+  ```
 
 
 ## Better Ways for an Effective Data Retrieval in BigQuery
@@ -86,3 +86,9 @@ The size of the data proccesed is 1.12 MB.
 ![image](https://github.com/arwa267/Data_engineering_zoomcamp/assets/77813858/54726484-35c4-4c90-9d8f-7b6ef478d2f9)
 
 Applying the same query for the non partitioned table, the size of the data proccesed is 12.81 MB.
+
+
+
+
+
+
