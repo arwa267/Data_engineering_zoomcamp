@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dataengineer2024
+
+    schema: taxiridesny
+
+    tables:
+      - name: external_green_tripdata
